@@ -559,7 +559,7 @@
     <string name="power_menu_actions_devicecontrols_title">Điều khiển thiết bị</string>
 
     <!-- Miscellaneous -->
-    <string name="miscellaneous_spoofing_category">Giả mạomạo</string>
+    <string name="miscellaneous_spoofing_category">Giả mạo</string>
     <string name="miscellaneous_developer_options_category">Tùy chọn nhà phát triển</string>
     <string name="miscellaneous_app_downgrade_title">Cho phép hạ phiên bản ứng dụng</string>
     <string name="miscellaneous_app_downgrade_summary">Cho phép hạ phiên bản ứng dụng hệ thống, có thể gây crash và mất dữ liệu</string>
@@ -608,7 +608,7 @@
     <string name="spoofing_snap_title">Snapchat</string>
     <string name="spoofing_snap_summary">giả mạo Snapchat như Pixel XL để khắc phục một số lỗi trò chuyện</string>
     <string name="gameprops_title">Bật Spoof Game Props</string>
-    <string name="gameprops_summary">Giả mạomạo thiết bị để mở FPS cao hơn cho một số game</string>
+    <string name="gameprops_summary">Giả mạo thiết bị để mở FPS cao hơn cho một số game</string>
     <string name="gameprops_load_json_title">Chọn file Game Props JSON</string>
     <string name="gameprops_load_json_summary">Chọn file JSON Game Props để dùng cho ngụy trang game</string>
     <string name="spoofing_netflix_title">Netflix</string>
