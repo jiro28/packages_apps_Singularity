@@ -161,7 +161,7 @@
     <string name="lock_screen_fingerprint_error_vibration_title">Rung khi xác thực lỗi</string>
     <string name="lock_screen_fingerprint_error_vibration_summary">Rung khi xác thực vân tay thất bại</string>
     <string name="lock_screen_miscellaneous_category">Khác</string>
-    <string name="lock_screen_pocket_detection_title">Phát hiện túi</string>
+    <string name="lock_screen_pocket_detection_title">Phát hiện ở chế độ túi</string>
     <string name="lock_screen_pocket_detection_summary">Chặn đầu vào màn hình và phím khi thiết bị ở trong túi</string>
     <string name="lock_screen_always_on_pocket_mode_title">Luôn bật chế độ túi</string>
     <string name="lock_screen_always_on_pocket_mode_summary">Luôn chặn đầu vào màn hình và phím khi màn hình bật</string>
@@ -487,27 +487,27 @@
     <string name="quick_settings_miscellaneous_category">Khác</string>
     <string name="quick_settings_bluetooth_show_dialog_title">Hộp thoại ô Bluetooth</string>
     <string name="quick_settings_bluetooth_show_dialog_summary">Hiển thị hộp thoại Bluetooth hoặc chuyển trạng thái Bluetooth khi chạm ô Bluetooth</string>
-    <string name="qs_header_image_title">Ảnh đầu</string>
+    <string name="qs_header_image_title">Ảnh nền đầu QS</string>
     <string name="qs_header_image_summary">Chọn ảnh nền đầu cho QS</string>
-    <string name="qs_header_daylight_pack_title">Bộ ảnh đầu</string>
-    <string name="qs_header_shadow_title">Bóng ảnh đầu</string>
+    <string name="qs_header_daylight_pack_title">Bộ ảnh nền đầu</string>
+    <string name="qs_header_shadow_title">Bóng ảnh nền đầu</string>
     <string name="qs_header_shadow_summary">Tăng độ dễ nhìn trên ảnh sáng</string>
     <string name="qs_header_static_provider_title">Ảnh tĩnh</string>
     <string name="qs_header_daylight_provider_title">Bộ sưu tập ảnh</string>
     <string name="qs_header_file_provider_title">Ảnh tùy chỉnh</string>
     <string name="qs_header_image_processing">Đang xử lý ảnh...</string>
-    <string name="qs_header_image_success">Lưu ảnh đầu thành công</string>
-    <string name="qs_header_image_error">Lưu ảnh đầu thất bại</string>
-    <string name="qs_header_provider_title">Nguồn ảnh đầu</string>
+    <string name="qs_header_image_success">Lưu ảnh đầu QS thành công</string>
+    <string name="qs_header_image_error">Lưu ảnh đầu QS thất bại</string>
+    <string name="qs_header_provider_title">Nguồn ảnh đầu QS</string>
     <string name="qs_header_browse_title">Duyệt bộ ảnh đã cài</string>
-    <string name="qs_header_browse_summary">Duyệt tất cả bộ ảnh đầu có sẵn</string>
-    <string name="qs_header_pick_title">Chọn ảnh đầu</string>
+    <string name="qs_header_browse_summary">Duyệt tất cả bộ ảnh đầu QS có sẵn</string>
+    <string name="qs_header_pick_title">Chọn ảnh đầu QSQS</string>
     <string name="qs_header_pick_summary">Chọn ảnh để dùng ở chế độ tĩnh</string>
     <string name="qs_header_file_select_title">Chọn ảnh</string>
     <string name="qs_header_file_select_summary">Chọn ảnh tùy chỉnh</string>
     <string name="qs_header_needs_gallery">Bạn phải cài ứng dụng gallery!</string>
-    <string name="qs_header_offset_title">Độ dịch ảnh đầu</string>
-    <string name="qs_header_offset_summary">Điều chỉnh kích thước ảnh đầu</string>
+    <string name="qs_header_offset_title">Độ dịch ảnh đầu QS</string>
+    <string name="qs_header_offset_summary">Điều chỉnh kích thước ảnh đầu QS</string>
 
     <!-- Notifications -->
     <string name="notifications_heads_up_title">Heads up</string>
@@ -561,8 +561,8 @@
     <!-- Miscellaneous -->
     <string name="miscellaneous_spoofing_category">Giả mạo</string>
     <string name="miscellaneous_developer_options_category">Tùy chọn nhà phát triển</string>
-    <string name="miscellaneous_app_downgrade_title">Cho phép hạ phiên bản ứng dụng</string>
-    <string name="miscellaneous_app_downgrade_summary">Cho phép hạ phiên bản ứng dụng hệ thống, có thể gây crash và mất dữ liệu</string>
+    <string name="miscellaneous_app_downgrade_title">Cho phép hạ cấp phiên bản ứng dụng</string>
+    <string name="miscellaneous_app_downgrade_summary">Cho phép hạ cấpcấp phiên bản ứng dụng hệ thống, có thể gây crash và mất dữ liệu</string>
     <string name="miscellaneous_block_wallpaper_dimming_title">Bỏ qua làm mờ hình nền</string>
     <string name="miscellaneous_block_wallpaper_dimming_summary">Chặn tất cả ứng dụng đặt làm mờ hình nền\nÉp độ mờ về 0</string>
     <string name="miscellaneous_ignore_window_secure_title">Bỏ qua cờ window secure</string>
@@ -597,7 +597,7 @@
     <string name="gms_spoof_title">Sửa Play Integrity</string>
     <string name="gms_spoof_summary">Giả mạo thiết bị để vượt Play Integrity</string>
     <string name="spoofing_storage_encryption_title">Mã hoá lưu trữ</string>
-    <string name="spoofing_storage_encryption_summary">Ngụy trang trạng thái mã hoá lưu trữ thành \'Đã mã hoá\'</string>
+    <string name="spoofing_storage_encryption_summary">Giả mạo trạng thái mã hoá lưu trữ thành \'Đã mã hoá\'</string>
     <string name="spoofing_app_specific_category">Riêng theo ứng dụng</string>
     <string name="spoofing_qsb_title">Ứng dụng Google</string>
     <string name="spoofing_qsb_summary">Giả mạo ứng dụng Google thành thiết bị Pixel mới nhất để mở tính năng độc quyền</string>
@@ -606,7 +606,7 @@
     <string name="spoofing_photos_title">Google Photos</string>
     <string name="spoofing_photos_summary">Giả mạo Google Photos như Pixel XL</string>
     <string name="spoofing_snap_title">Snapchat</string>
-    <string name="spoofing_snap_summary">giả mạo Snapchat như Pixel XL để khắc phục một số lỗi trò chuyện</string>
+    <string name="spoofing_snap_summary">Giả mạo Snapchat như Pixel XL để khắc phục một số lỗi trò chuyện</string>
     <string name="gameprops_title">Bật Spoof Game Props</string>
     <string name="gameprops_summary">Giả mạo thiết bị để mở FPS cao hơn cho một số game</string>
     <string name="gameprops_load_json_title">Chọn file Game Props JSON</string>
@@ -674,7 +674,7 @@
     <string name="systemui_restart_title">Cần khởi động lại SystemUI</string>
     <string name="systemui_restart_message">Để thay đổi có hiệu lực, cần khởi động lại SystemUI. Khởi động lại SystemUI ngay bây giờ?</string>
     <string name="systemui_restart_yes">Có</string>
-    <string name="systemui_restart_not_now">Không ngay</string>
+    <string name="systemui_restart_not_now">Để sau</string>
 
     <!-- Split Shade -->
     <string name="qs_split_shade_enabled_title">QS ngang cải tiến</string>
