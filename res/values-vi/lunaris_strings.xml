@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="hide_from_launcher_title">Ẩn khỏi launcher</string>
+    <string name="hide_from_launcher_summary">Ngăn ứng dụng này hiển thị trong bất kỳ launcher nào. Cần khởi động lại launcher để thay đổi có hiệu lực.</string>
+
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Luôn hiển thị khi sạc</string>
+    <string name="doze_on_charge_summary">Hiển thị thông tin khi thiết bị đang sạc</string>
+
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Liên kết âm lượng chuông &amp; thông báo</string>
+
+    <!-- Radio Info -->
+    <string name="radio_info_title">Thông tin radio</string>
+
+    <!-- QS Header -->
+    <string name="qs_header_image_title">Ảnh tiêu đề</string>
+    <string name="qs_header_image_summary">Chọn ảnh nền tiêu đề QS</string>
+    <string name="qs_header_daylight_pack_title">Bộ sưu tập ảnh tiêu đề</string>
+    <string name="qs_header_shadow_title">Bóng ảnh tiêu đề</string>
+    <string name="qs_header_shadow_summary">Để hiển thị rõ hơn trên ảnh sáng</string>
+    <string name="qs_header_static_provider_title">Ảnh tĩnh</string>
+    <string name="qs_header_daylight_provider_title">Bộ sưu tập ảnh</string>
+    <string name="qs_header_file_provider_title">Ảnh tùy chỉnh</string>
+    <string name="qs_header_image_processing">Đang xử lý ảnh...</string>
+    <string name="qs_header_image_success">Đã lưu ảnh tiêu đề thành công</string>
+    <string name="qs_header_image_error">Không thể lưu ảnh tiêu đề</string>
+    <string name="qs_header_provider_title">Nguồn ảnh tiêu đề</string>
+    <string name="qs_header_browse_title">Duyệt ảnh tiêu đề đã cài đặt</string>
+    <string name="qs_header_browse_summary">Duyệt tất cả bộ sưu tập ảnh tiêu đề có sẵn</string>
+    <string name="qs_header_pick_title">Chọn ảnh tiêu đề</string>
+    <string name="qs_header_pick_summary">Chọn ảnh để sử dụng cho chế độ tĩnh</string>
+    <string name="qs_header_file_select_title">Chọn ảnh</string>
+    <string name="qs_header_file_select_summary">Chọn ảnh tùy chỉnh</string>
+    <string name="qs_header_needs_gallery">Bạn cần cài đặt ứng dụng thư viện ảnh!</string>
+    <string name="qs_header_offset_title">Vị trí ảnh tiêu đề</string>
+    <string name="qs_header_offset_summary">Điều chỉnh kích thước ảnh tiêu đề</string>
+    <string name="apply_changes_title">Áp dụng thay đổi</string>
+    <string name="apply_changes_summary">Không có thay đổi đang chờ</string>
+    <string name="apply_changes_summary_pending">Nhấn để khởi động lại SystemUI và áp dụng thay đổi</string>
+
+    <!-- Label for a numbered SIM card.  [CHAR LIMIT=40] -->
+    <string name="sim_card_number_title" translatable="false">SIM <xliff:g id="card_number">%1$d</xliff:g></string>
+
+    <!-- AOD Schedule -->
+    <string name="always_on_display_schedule_title">Lịch hiển thị</string>
+    <string name="always_on_display_schedule_summary">Đặt lịch cho màn hình luôn bật</string>
+    <string name="always_on_display_schedule_sunset">Hoàng hôn</string>
+    <string name="always_on_display_schedule_sunrise">Bình minh</string>
+    <string name="always_on_display_schedule_mixed_sunset">Bật từ hoàng hôn đến một thời điểm</string>
+    <string name="always_on_display_schedule_mixed_sunrise">Bật từ một thời điểm đến bình minh</string>
+
+    <!-- QS Bluetooth Dialog -->
+    <string name="qs_bt_show_dialog_title">Hộp thoại ô Bluetooth</string>
+    <string name="qs_bt_show_dialog_summary">Hiển thị hộp thoại Bluetooth hoặc bật/tắt Bluetooth khi nhấn ô Bluetooth</string>
+
+    <!-- Carrier name on lockscreen -->
+    <string name="lockscreen_show_carrier_title">Tên nhà mạng</string>
+    <string name="lockscreen_show_carrier_summary">Hiển thị tên nhà mạng trên thanh trạng thái</string>
+
+    <!-- Statusbar Padding -->
+    <string name="statusbar_extra_padding_category">Khoảng đệm thêm</string>
+    <string name="statusbar_extra_padding_start_title">Khoảng đệm đầu</string>
+    <string name="statusbar_extra_padding_top_title">Khoảng đệm trên</string>
+    <string name="statusbar_extra_padding_end_title">Khoảng đệm cuối</string>
+
+    <!-- Wi-Fi MAC address randomization -->
+    <string name="wifi_per_connection_random_mac_addr">Sử dụng MAC ngẫu nhiên theo kết nối (mặc định)</string>
+    <string name="wifi_per_network_random_mac_addr">Sử dụng MAC ngẫu nhiên theo mạng</string>
+    <string name="wifi_device_mac_addr">Sử dụng MAC thiết bị</string>
+
+    <!-- Ambient wake -->
+    <string name="doze_gesture_ambient_title">Hiển thị Ambient</string>
+    <string name="doze_gesture_ambient_summary">Hiển thị Ambient Display thay vì bật hoàn toàn màn hình</string>
+    <string name="gesture_wake_ambient">Hiển thị Ambient</string>
+    <string name="gesture_wake">Bật hoàn toàn</string>
+
+    <!-- Sidebar -->
+    <string name="sidebar_title">Thanh bên</string>
+    <string name="sidebar_summary">Mở nhanh ứng dụng trong cửa sổ nổi</string>
+
+    <!-- Smartspace -->
+    <string name="lockscreen_smartspace_title">Smartspace</string>
+    <string name="lockscreen_smartspace_summary">Hiển thị Google Smartspace khi có sẵn</string>
+
+    <!-- Clipboard auto clear -->
+    <string name="clipboard_auto_clear_timeout_title">Thời gian tự động xóa bộ nhớ tạm</string>
+    <string name="clipboard_auto_clear_title">Tự động xóa bộ nhớ tạm</string>
+    <string name="clipboard_auto_clear_summary">Tự động xóa bộ nhớ tạm theo thời gian đã đặt</string>
+    <string name="clipboard_auto_clear_enabled_title">Bật tự động xóa bộ nhớ tạm</string>
+    <string name="clipboard_auto_clear_timeout_disable_clipboard">Tắt bộ nhớ tạm</string>
+
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Tăng dần âm lượng chuông</string>
+    <string name="increasing_ring_min_volume_title">Âm lượng bắt đầu</string>
+    <string name="increasing_ring_ramp_up_time_title">Thời gian tăng dần</string>
+
+    <!-- Disable DNS for VPN -->
+    <string name="vpn_enforce_dns_title">Tắt cho VPN</string>
+    <string name="vpn_enforce_dns_summary">Tắt DNS riêng khi kết nối VPN và khôi phục khi ngắt kết nối</string>
+
+    <!-- Cycle through ringer modes gesture -->
+    <string name="prevent_ringing_option_cycle">Chuyển đổi qua các chế độ</string>
+    <string name="prevent_ringing_option_cycle_summary">Bật (chuyển đổi qua các chế độ)</string>
+
+    <!-- Application downgrade -->
+    <string name="system_spoof_category_title">Giả lập hệ thống</string>
+    <string name="app_downgrade_title">Cho phép hạ cấp ứng dụng</string>
+    <string name="app_downgrade_summary">Cho phép hạ cấp ứng dụng. Lưu ý rằng điều này có thể gây lỗi và hỏng dữ liệu.</string>
+
+    <!-- Heads-up -->
+    <string name="compact_heads_up_notifications_enabled_title">Thông báo nổi thu gọn</string>
+    <string name="compact_heads_up_notifications_enabled_summary">Hiển thị thông báo ở kích thước thu gọn</string>
+
+    <!-- Navigation bar taskbar -->
+    <string name="navigation_bar_enable_taskbar_title">Thanh tác vụ</string>
+    <string name="navigation_bar_enable_taskbar_summary">Hiển thị thanh tác vụ với chế độ điều hướng đã chọn</string>
+
+    <!-- IME button space -->
+    <string name="show_ime_space_title">Hiển thị khoảng trống nút IME</string>
+    <string name="show_ime_space_summary">Bật tính năng chuyển đổi nhanh phương thức nhập để chuyển đổi hoặc ẩn bàn phím ảo từ thanh tính năng ở cuối màn hình khi gõ</string>
+
+    <!-- Unlimit screenrecord -->
+    <string name="unlimit_screenrecord_title">Bỏ giới hạn ghi màn hình</string>
+    <string name="unlimit_screenrecord_summary">Bỏ giới hạn kích thước tệp 15GiB\nCó thể tạo tệp đầu ra lớn hơn cần thiết</string>
+
+    <!-- Hide screen capture status -->
+    <string name="hide_screen_capture_status_title">Ẩn trạng thái chụp màn hình</string>
+    <string name="hide_screen_capture_status_summary">Ẩn trạng thái chụp và ghi màn hình khỏi tất cả ứng dụng. Có thể tiện lợi nhưng có thể gây rò rỉ quyền riêng tư. Cần khởi động lại ứng dụng để thay đổi có hiệu lực.</string>
+
+    <!-- No storage restrict -->
+    <string name="no_storage_restrict_title">Không giới hạn bộ nhớ</string>
+    <string name="no_storage_restrict_summary">Bỏ giới hạn khi chọn thư mục qua Storage Access Framework. Có thể tiện lợi nhưng có thể gây rò rỉ quyền riêng tư.</string>
+
+    <!-- Ignore wallpaper dimming requests -->
+    <string name="ignore_wallpaper_dimming_requests_title">Bỏ qua yêu cầu làm tối hình nền</string>
+    <string name="ignore_wallpaper_dimming_requests_summary">Chặn tất cả ứng dụng làm tối hình nền\nĐặt độ tối về 0</string>
+
+    <!-- SystemUI restart dialog -->
+    <string name="systemui_restart_process">Đang khởi động lại SystemUI để áp dụng thay đổi...</string>
+
+    <!-- Notification / Power Menu Styles -->
+    <string name="notification_style_title">Kiểu thông báo</string>
+    <string name="powermenu_style_title">Kiểu menu nguồn</string>
+    <string name="custom_style_cyberpunk">Cyberpunk</string>
+    <string name="custom_style_duoline">Duoline</string>
+    <string name="custom_style_fluid">Mềm mại (Trong suốt)</string>
+    <string name="custom_style_ios">IOS</string>
+    <string name="custom_style_layers">Lớp</string>
+
+    <!-- Keybox Data -->
+    <string name="keybox_data_title">Ghi đè chứng thực Keybox</string>
+    <string name="keybox_data_summary">Tải tệp XML keybox tùy chỉnh để ghi đè chứng thực khóa thiết bị</string>
+    <string name="keybox_data_loaded_summary">Đã tải XML keybox tùy chỉnh. Xóa để dọn sạch.</string>
+    <string name="keybox_delete_content_description">Xóa dữ liệu keybox</string>
+    <string name="keybox_toast_invalid_file_selected">Không phải tệp XML. Hãy chọn tệp XML keybox hợp lệ.</string>
+    <string name="keybox_toast_missing_data">XML keybox không hợp lệ: thiếu trường bắt buộc</string>
+    <string name="keybox_toast_file_loaded">Đã tải keybox</string>
+    <string name="keybox_toast_file_cleared">Đã xóa keybox</string>
+
+    <!-- Block attestation even with Keybox Data -->
+    <string name="pi_gmscertchain_title">Tắt ép buộc tính toàn vẹn cao</string>
+    <string name="pi_gmscertchain_summary">Khi bật, không ép buộc tính toàn vẹn cao từ keybox tùy chỉnh hợp lệ và phụ thuộc vào giả lập Google Play Integrity để sửa các ứng dụng như Google Pay</string>
+
+    <!-- QS Tiles Style -->
+    <string name="qs_tile_shape_title">Hình dạng ô QS</string>
+    <string name="qs_tile_shape_dynamic">Linh hoạt</string>
+    <string name="qs_tile_shape_circle">Hình tròn</string>
+    <string name="qs_tile_shape_rounded_square_smooth">Hình vuông bo tròn (mượt)</string>
+    <string name="qs_tile_shape_rounded_square">Hình vuông bo tròn</string>
+    <string name="qs_tile_shape_square">Hình vuông</string>
+
+    <!-- Force dark mode -->
+    <string name="force_dark_title">Chế độ tối cho ứng dụng bên thứ ba</string>
+    <string name="force_dark_summary">Ép buộc màu tối hơn trong các ứng dụng không có chế độ tối. Một số màn hình có thể hiển thị sai.</string>
+
+    <!-- Brightness Slider Style -->
+    <string name="qs_brightness_slider_shape_title">Hình dạng thanh trượt độ sáng</string>
+
+    <!-- Force LTE_CA -->
+    <string name="force_lte_ca_title">Tổng hợp sóng mang LTE</string>
+    <string name="force_lte_ca_summary">Tăng băng thông LTE bằng cách tổng hợp các băng tần được hỗ trợ</string>
+
+    <!-- QS on lockscreen -->
+    <string name="lockscreen_quick_settings_title">QS trên màn hình khóa</string>
+    <string name="lockscreen_quick_settings_summary">Cho phép vuốt xuống trên màn hình khóa để xem Cài đặt nhanh</string>
+
+    <!-- Media art -->
+    <string name="ls_media_art_title">Ảnh bìa nhạc</string>
+    <string name="ls_media_art_summary">Hiển thị ảnh bìa nhạc khi có sẵn</string>
+    <string name="media_art_title">Ảnh bìa nhạc</string>
+    <string name="media_art_summary">Hiển thị ảnh bìa nhạc khi có sẵn</string>
+    <string name="ls_media_art_fade_level_title">Mức mờ ảnh bìa nhạc</string>
+    <string name="ls_media_art_fade_level_summary">Đặt mức mờ ảnh bìa nhạc</string>
+
+    <!-- Lock screen album art filter -->
+    <string name="lockscreen_albumart_filter_title">Bộ lọc ảnh bìa nhạc</string>
+    <string name="lockscreen_albumart_filter_none">Không</string>
+    <string name="lockscreen_albumart_filter_grayscale">Xám</string>
+    <string name="lockscreen_albumart_filter_tint">Phủ màu nhấn</string>
+    <string name="lockscreen_albumart_filter_blur">Làm mờ</string>
+    <string name="lockscreen_albumart_filter_grayblur">Xám và mờ</string>
+
+    <!-- AOD Media Settings -->
+    <string name="show_on_aod_title">Hiển thị trên AOD</string>
+    <string name="show_on_aod_summary">Hiển thị ảnh bìa nhạc trên Màn hình luôn bật</string>
+    <string name="aod_brightness_title">Độ sáng AOD</string>
+
+    <!-- Media Art Filter -->
+    <string name="lockscreen_media_art_filter_title">Bộ lọc ảnh nhạc</string>
+    <string name="lockscreen_media_art_filter_summary">Chọn bộ lọc hiệu ứng cho ảnh nhạc</string>
+    <string name="lockscreen_media_art_pixel_size_title">Kích thước pixel ảnh nhạc</string>
+    <string name="lockscreen_media_art_pixel_size_summary">Điều chỉnh kích thước pixel cho ảnh nhạc hiển thị trên màn hình khóa</string>
+
+    <!-- Media Art Fade Level -->
+    <string name="lockscreen_media_art_fade_level_title">Mức mờ ảnh nhạc</string>
+    <string name="lockscreen_media_art_fade_level_summary">Lớp phủ tối để đọc chữ rõ hơn</string>
+
+    <!-- Media Art Blur Level -->
+    <string name="lockscreen_media_art_blur_level_title">Mức làm mờ ảnh nhạc</string>
+    <string name="lockscreen_media_art_blur_level_summary">Cường độ làm mờ khi áp dụng bộ lọc mờ</string>
+
+    <!-- Pulse music visualizer -->
+    <string name="pulse_settings_title">Hiệu ứng Pulse</string>
+    <string name="pulse_show_on_ambient_title">Hiển thị trên ambient</string>
+    <string name="pulse_show_on_ambient_summary">Hiển thị hiệu ứng trên màn hình luôn bật và chế độ ambient. Tắt để chỉ hiển thị trên màn hình khóa.</string>
+    <string name="pulse_settings_summary">Hiển thị thanh hiệu ứng trên màn hình khóa khi phát nhạc</string>
+    <string name="ambient_pulse_enabled_title">Pulse Ambient</string>
+    <string name="ambient_pulse_enabled_summary">Hiển thị hiệu ứng trên Ambient Display</string>
+    <string name="pulse_rounded_bars_title">Thanh bo tròn</string>
+    <string name="pulse_rounded_bars_summary">Hiển thị thanh hiệu ứng với góc bo tròn</string>
+    <string name="pulse_color">Màu hiệu ứng</string>
+    <string name="pulse_color_lavalamp">Đèn dung nham</string>
+    <string name="pulse_color_album">Ảnh bìa album</string>
+    <string name="pulse_color_accent">Màu nhấn</string>
+    <string name="pulse_bar_count_title">Số lượng thanh</string>
+    <string name="pulse_bar_count_summary">Đặt số lượng thanh hiển thị trong hiệu ứng</string>
+    <string name="pulse_bar_count_units">thanh</string>
+    <string name="pulse_renderer">Kiểu hiệu ứng</string>
+    <string name="pulse_renderer_solid">Đường liền</string>
+    <string name="pulse_renderer_fading">Khối mờ dần</string>
+    <string name="pulse_renderer_neon_glow">Phát sáng neon</string>
+    <string name="pulse_renderer_retro_vu_meter">Đồng hồ VU hoài cổ</string>
+    <string name="pulse_renderer_minimal_wave">Sóng tối giản</string>
+    <string name="pulse_renderer_sparkle">Lấp lánh</string>
+    <string name="pulse_renderer_matrix">Ma trận</string>
+
+    <!-- Pulse height multiplier -->
+    <string name="pulse_height_multiplier_title">Chiều cao Pulse</string>
+    <string name="pulse_height_multiplier_summary">Điều chỉnh chiều cao hiệu ứng</string>
+
+    <!-- Notification Row -->
+    <string name="notification_row_transparency_title">Thông báo mờ</string>
+    <string name="notification_row_transparency_summary">Đặt nền mờ cho thông báo trong QS</string>
+    <string name="notification_row_transparency_lockscreen_title">Thông báo mờ trên màn hình khóa</string>
+    <string name="notification_row_transparency_lockscreen_summary">Đặt nền mờ cho thông báo trên màn hình khóa</string>
+
+    <!-- Ambient Wallpaper -->
+    <string name="doze_always_on_wallpaper_title">Hình nền Ambient</string>
+    <string name="doze_always_on_wallpaper_summary">Hiển thị hình nền màn hình khóa trên Ambient Display</string>
+
+    <!-- Squiggle animation for media notification -->
+    <string name="media_category_title">Trình phát nhạc</string>
+    <string name="media_squiggle_animation_title">Hiệu ứng sóng uốn</string>
+    <string name="media_squiggle_animation_summary">Hiển thị hiệu ứng sóng uốn trên thanh tua khi phát nhạc</string>
+
+    <!-- Vbmeta hash attestation -->
+    <string name="vbmeta_attestation_title">Tự sửa phát hiện VBMeta</string>
+    <string name="vbmeta_attestation_summary">Thực hiện chứng thực khóa để tạo hash boot đã xác minh khi khởi động. Cần khởi động lại hệ thống.</string>
+
+    <!-- Menu option for not validating the EAP server -->
+    <string name="wifi_do_not_validate_eap_server">Không xác thực</string>
+    <!-- Warning message displayed if user choses not to validate the EAP server -->
+    <string name="wifi_do_not_validate_eap_server_warning">Không có chứng chỉ được chỉ định. Kết nối của bạn sẽ không riêng tư.</string>
+
+    <!-- Font Mode -->
+    <string name="font_mode_title">Nguồn phông chữ</string>
+    <string name="font_settings_title">Cài đặt phông chữ</string>
+    <string name="font_settings_summary">Tùy chỉnh phông chữ hệ thống</string>
+
+    <!-- Custom Font Picker -->
+    <string name="custom_font_picker_title">Chọn phông chữ tùy chỉnh</string>
+    <string name="custom_font_picker_summary">Chọn tệp phông chữ từ bộ nhớ</string>
+    <string name="github_font_picker_title">Duyệt phông chữ GitHub</string>
+    <string name="github_font_picker_summary">Tải và xem trước phông chữ từ kho lưu trữ</string>
+    <string name="custom_font_installed_title">Phông chữ hiện tại</string>
+    <string name="custom_font_installed_summary">%s</string>
+    <string name="reset_custom_font_title">Đặt lại về mặc định</string>
+    <string name="reset_custom_font_summary">Xóa phông chữ tùy chỉnh và khôi phục mặc định hệ thống</string>
+    <string name="custom_font_reset_success">Đã đặt lại phông chữ về mặc định</string>
+    <string name="reboot_device">Khởi động lại thiết bị</string>
+    <string name="reboot_required_title">Cần khởi động lại</string>
+    <string name="reboot_required_message">Cần khởi động lại để thay đổi phông chữ có hiệu lực</string>
+    <string name="reboot_required_custom_font_desc">Khởi động lại để áp dụng thay đổi phông chữ tùy chỉnh</string>
+    <string name="custom_font_installed_success">Đã cài đặt phông chữ thành công</string>
+    <string name="custom_font_install_failed">Không thể cài đặt phông chữ</string>
+    <string name="font_preview_error">Không thể xem trước phông chữ</string>
+    <string name="font_download_error">Không thể tải phông chữ</string>
+    <string name="font_preview_title">Xem trước phông chữ</string>
+    <string name="install_font">Cài đặt</string>
+    <string name="github_fonts_header">Phông chữ có sẵn</string>
+    <string name="no_fonts_available">Không có phông chữ nào</string>
+    <string name="github_fonts_error">Không thể tải phông chữ từ GitHub</string>
+    <string name="github_fonts_fetch_error">Không thể tải phông chữ từ GitHub</string>
+    <string name="preview">Xem trước</string>
+    <string name="install">Cài đặt</string>
+    <string name="download_first_message">Tải phông chữ trước bằng cách nhấn Xem trước</string>
+
+    <!-- Category -->
+    <string name="video_wallpaper_title">Hình nền video</string>
+    <string name="video_wallpaper_category">Tùy chỉnh hình nền</string>
+    <string name="video_wallpaper_category_title">Hình nền video</string>
+    <string name="video_wallpaper_category_summary">Đặt hình nền động (MP4, GIF, WebP)</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Giá trị: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">theo mặc định</string>
+    <string name="custom_seekbar_default_value_to_set">Giá trị mặc định: <xliff:g id="v">%s</xliff:g>\nNhấn giữ để đặt</string>
+    <string name="custom_seekbar_default_value_is_set">Đã đặt giá trị mặc định</string>
+
+    <!-- SystemUI restart dialog -->
+    <string name="systemui_restart_title">Cần khởi động lại SystemUI</string>
+    <string name="systemui_restart_message">Để thay đổi có hiệu lực, cần khởi động lại SystemUI. Khởi động lại SystemUI ngay?</string>
+    <string name="systemui_restart_yes">Có</string>
+    <string name="systemui_restart_not_now">Không phải bây giờ</string>
+
+    <!-- Preferences -->
+    <string name="video_wallpaper_current_title">Hình nền hiện tại</string>
+    <string name="video_wallpaper_current_summary">Chưa chọn hình nền video</string>
+
+    <string name="video_wallpaper_pick_title">Chọn video/GIF</string>
+    <string name="video_wallpaper_pick_summary">Chọn video hoặc ảnh động</string>
+
+    <string name="video_wallpaper_enable_title">Bật hình nền video</string>
+    <string name="video_wallpaper_enable_summary">Áp dụng video đã chọn làm hình nền động</string>
+
+    <string name="video_wallpaper_clear_title">Xóa hình nền video</string>
+    <string name="video_wallpaper_clear_summary">Xóa hình nền video hiện tại</string>
+
+    <string name="video_wallpaper_playback">Cài đặt phát lại</string>
+
+    <string name="video_wallpaper_speed">Tốc độ phát lại</string>
+
+    <string name="video_wallpaper_pause_lock">Tạm dừng trên màn hình khóa</string>
+    <string name="video_wallpaper_pause_lock_summary">Tiết kiệm pin khi màn hình bị khóa</string>
+
+    <!-- Info section -->
+    <string name="video_wallpaper_info_category_title">Thông tin</string>
+    <string name="video_wallpaper_info_title">Định dạng hỗ trợ</string>
+    <string name="video_wallpaper_info_summary">Video MP4, ảnh động GIF và WebP\nKích thước tệp tối đa: 50MB</string>
+
+    <string name="video_wallpaper_tips_title">Mẹo</string>
+    <string name="video_wallpaper_tips_summary">• Video được tự động tắt tiếng\n• Video độ phân giải thấp hơn sẽ tiết kiệm pin hơn\n• Nên dùng vòng lặp ngắn để có hiệu suất tốt hơn\n• Nếu hình nền video không tải, chọn hình nền động từ Hình nền và kiểu sau khi chọn hình nền video\n• Bạn cần áp dụng lại hình nền động sau khi khởi động lại thiết bị</string>
+
+    <string name="video_wallpaper_description">Hình nền video và GIF động</string>
+    <string name="lunaris_os">GHOST</string>
+
+    <!-- Video Wallpaper Strings -->
+    <string name="video_wallpaper_cleared">Đã xóa hình nền video</string>
+    <string name="video_wallpaper_clear_failed">Không thể xóa hình nền video</string>
+    <string name="video_wallpaper_current_summary_dynamic">%1$s • %2$s</string>
+    <string name="video_wallpaper_current_none">Chưa chọn hình nền video</string>
+    <string name="video_wallpaper_select_first">Vui lòng chọn hình nền video trước</string>
+    <string name="video_wallpaper_select_wallpaper">Chọn hình nền video</string>
+    <string name="video_wallpaper_save_failed">Không thể lưu video hoặc ảnh đã chọn</string>
+    <string name="video_wallpaper_apply_prompt">Áp dụng hình nền video đã chọn thủ công từ màn hình xem trước</string>
+    <string name="video_wallpaper_enable_failed">Không thể bật hình nền video</string>
+    <string name="video_wallpaper_picker_error">Không thể mở trình chọn. Vui lòng thử lại.</string>
+    <string name="video_wallpaper_processing">Đang xử lý tệp đã chọn...</string>
+    <string name="video_wallpaper_saved">Đã lưu hình nền video thành công</string>
+
+    <!-- Wallpaper Glymps -->
+    <string name="lock_glymps_title">Wallpaper Glymps</string>
+    <string name="lock_glymps_enable_title">Bật Wallpaper Glymps</string>
+    <string name="lock_glymps_enable_summary">Đổi hình nền mỗi khi màn hình sáng</string>
+    <string name="lock_glymps_wallpaper_target_title">Áp dụng hình nền cho</string>
+    <string name="lock_glymps_source_category">Nguồn hình nền</string>
+    <string name="lock_glymps_source_title">Nguồn hình nền</string>
+    <string name="lock_glymps_source_summary">Chọn nơi lấy hình nền</string>
+
+    <string name="lock_glymps_custom_urls_title">Quản lý URL tùy chỉnh</string>
+    <string name="lock_glymps_custom_urls_summary">Thêm hoặc xóa URL hình nền tùy chỉnh</string>
+
+    <string name="lock_glymps_folder_title">Thư mục cục bộ</string>
+    <string name="lock_glymps_folder_summary">Xem vị trí thư mục và số lượng hình nền (Tối đa 10 hình nền)</string>
+
+    <string name="lock_glymps_download_category">Cài đặt tải xuống</string>
+    <string name="lock_glymps_wifi_only_title">Chỉ WiFi</string>
+    <string name="lock_glymps_wifi_only_summary">Chỉ tải hình nền khi kết nối WiFi</string>
+
+    <string name="lock_glymps_cache_size_title">Kích thước bộ nhớ đệm</string>
+    <string name="lock_glymps_cache_size_summary">Số lượng hình nền tải trước</string>
+
+    <string name="lock_glymps_advanced_category">Nâng cao</string>
+    <string name="lock_glymps_clear_cache_title">Xóa bộ nhớ đệm</string>
+    <string name="lock_glymps_clear_cache_summary">Xóa tất cả hình nền đã lưu trong bộ nhớ đệm</string>
+
+    <string name="lock_glymps_behavior_category">Hành vi</string>
+    <string name="lock_glymps_change_on_title">Đổi hình nền khi</string>
+    <string name="lock_glymps_change_on_summary">Thời điểm đổi hình nền</string>
+
+    <string name="lock_glymps_timer_interval_title">Khoảng thời gian hẹn giờ</string>
+    <string name="lock_glymps_timer_interval_summary">Tần suất tự động đổi hình nền</string>
+
+    <!-- Footer -->
+    <string name="lock_glymps_footer_title">Thông tin quan trọng</string>
+    <string name="lock_glymps_footer_text">📁 Thư mục cục bộ: /sdcard/LunarisGlymps\n\n⚠️ Thiết bị cấu hình thấp có thể bị giật nhẹ\n\n🎨 Mẹo: Dùng Màu nhấn tùy chỉnh trong Cài đặt Monet để có màu ổn định</string>
+
+    <!-- Preview strings -->
+    <string name="lock_glymps_preview_category">Hình nền hiện tại</string>
+    <string name="lock_glymps_preview_title">Xem trước hình nền</string>
+    <string name="lock_glymps_preview_summary">Hình nền màn hình khóa và màn hình chính hiện tại</string>
+    <string name="lock_glymps_lock_screen">Màn hình khóa</string>
+    <string name="lock_glymps_home_screen">Màn hình chính</string>
+    <string name="lock_glymps_apply_now">Áp dụng hình nền mới</string>
+    <string name="lock_glymps_applying">Đang áp dụng...</string>
+    <string name="lock_glymps_lock_preview_desc">Xem trước hình nền màn hình khóa</string>
+    <string name="lock_glymps_home_preview_desc">Xem trước hình nền màn hình chính</string>
+
+    <!-- Font styles -->
+    <string name="font_styles_title">Kiểu phông chữ</string>
+    <string name="font_styles_summary">Thay đổi kiểu phông chữ hệ thống</string>
+    <string name="font_preview_text">The quick brown\nfox jumps over the\nlazy dog\n\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijkl\nmnopqrstuvwxyz\n1234567890</string>
+    <string name="apply_button_text">Áp dụng</string>
+    <string name="font_picker_select_font">Chọn phông chữ</string>
+
+    <!-- Apply Button -->
+    <string name="apply_change_button_title">Áp dụng</string>
+
+    <!-- App search preference -->
+    <string name="search">Tìm kiếm</string>
+    <string name="search_apps">Tìm kiếm ứng dụng</string>
+
+    <!-- Charging Animation Settings -->
+    <string name="charging_animation_style_category_title">Kiểu hiệu ứng</string>
+    <string name="charging_animation_style_title">Loại hiệu ứng</string>
+    <string name="charging_ripple_opacity_title">Độ mờ gợn sóng</string>
+    <string name="charging_ripple_opacity_summary">Điều chỉnh độ hiển thị của gợn sóng</string>
+    <string name="charging_glow_intensity_title">Cường độ phát sáng</string>
+    <string name="charging_glow_intensity_summary">Điều chỉnh độ sáng của hiệu ứng phát sáng và hạt</string>
+    <string name="charging_arc_count_title">Số lượng sóng</string>
+    <string name="charging_arc_count_summary">Đặt số lượng sóng hiển thị</string>
+    <string name="charging_appearance_category_title">Giao diện</string>
+    <string name="charging_color_mode_title">Chế độ màu</string>
+    <string name="charging_display_category_title">Tùy chọn hiển thị</string>
+    <string name="charging_show_on_lockscreen_summary">Hiển thị hiệu ứng khi màn hình khóa đang hiện</string>
+    <string name="charging_show_on_aod_summary">Hiển thị hiệu ứng trong chế độ ambient</string>
+
+    <!-- Now Playing -->
+    <string name="nowplaying_title">Đang phát</string>
+    <string name="nowplaying_summary">Hiển thị thông tin nhạc đang phát trên màn hình khóa và AOD</string>
+    <string name="nowplaying_appearance_title">Giao diện</string>
+    <string name="nowplaying_use_accent_color_title">Sử dụng màu nhấn</string>
+    <string name="nowplaying_use_accent_color_summary">Sử dụng màu nhấn hệ thống thay vì màu trắng</string>
+    <string name="nowplaying_vertical_position_title">Vị trí dọc</string>
+    <string name="nowplaying_vertical_position_summary">Điều chỉnh vị trí từ trên xuống dưới màn hình</string>
+    <string name="nowplaying_track_text_size_title">Cỡ chữ tiêu đề bài hát</string>
+    <string name="nowplaying_track_text_size_summary">Kích thước chữ tiêu đề bài hát</string>
+    <string name="nowplaying_artist_text_size_title">Cỡ chữ tên nghệ sĩ</string>
+    <string name="nowplaying_artist_text_size_summary">Kích thước chữ tên nghệ sĩ/album</string>
+    <string name="nowplaying_display_title">Tùy chọn hiển thị</string>
+    <string name="nowplaying_show_on_lockscreen_title">Hiển thị trên màn hình khóa</string>
+    <string name="nowplaying_show_on_lockscreen_summary">Hiển thị thông tin nhạc khi thiết bị bị khóa</string>
+    <string name="nowplaying_icon_style_title">Kiểu biểu tượng</string>
+    <string name="nowplaying_icon_style_summary">Chọn biểu tượng hiển thị</string>
+    <string name="nowplaying_icon_size_title">Kích thước biểu tượng</string>
+    <string name="nowplaying_icon_size_summary">Điều chỉnh kích thước biểu tượng</string>
+    <string name="nowplaying_show_on_aod_title">Hiển thị trên Màn hình luôn bật</string>
+    <string name="nowplaying_show_on_aod_summary">Hiển thị thông tin nhạc trên ambient display</string>
+    <string name="nowplaying_compact_style_title">Kiểu thu gọn</string>
+    <string name="nowplaying_compact_style_summary">Hiển thị trên một dòng duy nhất sử dụng cỡ chữ tiêu đề bài hát</string>
+    <string name="nowplaying_info_summary">Đang phát hiển thị tiêu đề bài hát và nghệ sĩ đang phát trên màn hình khóa và Màn hình luôn bật. Nó tự động xuất hiện khi phát nhạc và biến mất khi dừng. Có thể điều chỉnh vị trí hiển thị từ trên xuống dưới màn hình.</string>
+
+    <!-- Smart Space -->
+    <string name="quickspace_psa_title">Tin nhắn ngẫu nhiên Smartspace</string>
+    <string name="quickspace_psa_summary">Hiển thị tin nhắn ngẫu nhiên theo thời gian trên màn hình khóa</string>
+
+    <!-- Miscellaneous/Hide applist -->
+    <string name="hide_applist_title">Ẩn danh sách ứng dụng</string>
+    <string name="hide_applist_summary">Ngăn ứng dụng kiểm tra các ứng dụng đã chọn từ danh sách</string>
+    <string name="menu_show_overlay">Hiển thị lớp phủ</string>
+    <string name="menu_hide_overlay">Ẩn lớp phủ</string>
+
+    <!-- Media art QS background -->
+    <string name="media_waveform_seekbar_title">Thanh tua dạng sóng</string>
+    <string name="media_waveform_seekbar_summary">Bật hiệu ứng sóng động cho tiến trình phát nhạc</string>
+
+    <!-- Smile Switch -->
+    <string name="smile_switch_title">Smile Switch</string>
+    <string name="smile_switch_summary">Bật Smile Switch</string>
+
+    <string name="lockscreen_emergency_button_title">Hiển thị nút khẩn cấp</string>
+    <string name="lockscreen_emergency_button_summary">Hiển thị nút gọi khẩn cấp trên màn hình khóa</string>
+
+    <!-- Ripple Shape -->
+    <string name="ripple_shape_title">Hình dạng gợn sóng sạc</string>
+
+    <!-- Dynamic charging animation -->
+    <string name="wireless_charging_dynamic_color_title">Màu sạc động</string>
+    <string name="wireless_charging_dynamic_color_summary">Sử dụng mức pin để xác định màu hiệu ứng gợn sóng sạc</string>
+
+    <!-- Monet Settings -->
+    <string name="monet_settings_title">Tùy chỉnh màu sắc</string>
+    <string name="monet_settings_summary">Tùy chỉnh màu chủ đề và kiểu</string>
+    <string name="color_settings_category">Cài đặt màu sắc</string>
+    <string name="advanced_settings_category">Cài đặt nâng cao</string>
+    <string name="use_wallpaper_colors_title">Dùng màu hình nền</string>
+    <string name="use_wallpaper_colors_desc">Trích xuất màu từ hình nền của bạn</string>
+    <string name="custom_seed_color_title">Màu gốc tùy chỉnh</string>
+    <string name="theme_style_title">Kiểu chủ đề</string>
+    <string name="theme_style_desc">Chọn kiểu bảng màu</string>
+    <string name="fidelity_title">Độ trung thực màu</string>
+    <string name="fidelity_desc">Giữ nguyên màu gốc chính xác hơn</string>
+    <string name="contrast_level_title">Mức tương phản</string>
+    <string name="chroma_boost_title">Tăng cường sắc độ</string>
+    <string name="about_color_customization_title">Về tùy chỉnh màu sắc</string>
+    <string name="about_color_customization_desc">Thay đổi màu được áp dụng toàn hệ thống cho tất cả ứng dụng hỗ trợ Material You.\nViệc điều chỉnh màu có thể ảnh hưởng đến giao diện các ứng dụng trên thiết bị.</string>
+    <string name="wallpaper_seed_color_title">Chọn từ hình nền</string>
+    <string name="wallpaper_seed_color_desc">Trích xuất màu từ hình nền hiện tại</string>
+
+    <!-- Island Notification -->
+    <string name="island_notification_now_playing_title">Đang phát</string>
+    <string name="island_notification_now_playing_summary">Hiển thị bài hát đang phát theo kiểu Dynamic Island</string>
+    <string name="island_notification_footer_text">
+        Tính năng thông báo Island, lấy cảm hứng từ Dynamic Island của iOS, biến thông báo nổi của Android thành tiện ích thông báo nhanh và thu gọn.\n\nĐiều khiển nhanh Island bao gồm các tính năng sau:\n1. Nhấn thông báo island để trả lời nhanh cuộc gọi.\n2. Nhấn giữ thông báo island để từ chối cuộc gọi.\n3. Nhấn giữ thông báo island để mở rộng xem trước thông báo island.</string>
+    <string name="notifications_island_notification_title">Thông báo Island</string>
+    <string name="notifications_island_notification_summary">Hiển thị thông báo nổi theo kiểu Dynamic Island</string>
+    <string name="island_transparent_background_title">Nền Island trong suốt</string>
+    <string name="island_transparent_background_summary">Sử dụng nền trong suốt cho thông báo island</string>
+    <string name="island_margin_top_title">Khoảng cách trên thông báo Island</string>
+
+    <!-- Power off verify -->
+    <string name="power_off_verify_footer">Xác minh tắt nguồn bảo vệ thiết bị bằng cách ngăn người khác tắt ngay sau khi thiết bị bị mất, tăng cơ hội tìm lại. Bạn chỉ cần nhập mật khẩu màn hình khóa khi tắt nguồn hoặc khởi động lại từ màn hình khóa.</string>
+    <string name="power_off_verify_summary">Khi thiết bị bị khóa, bạn cần sử dụng mật khẩu để tắt nguồn hoặc khởi động lại.</string>
+    <string name="power_off_verify_title">Xác minh tắt nguồn</string>
+
+    <!-- Compact QS Media Player-->
+    <string name="qs_compact_media_player_mode_title">Trình phát nhạc QS thu gọn</string>
+    <string name="qs_compact_media_player_mode_summary">Bật chế độ thu gọn cho trình phát nhạc Cài đặt nhanh</string>
+    <string name="qs_media_stock_title">Trình phát nhạc QS gốc</string>
+    <string name="qs_media_stock_summary">Bật trình phát nhạc lớn gốc trong Cài đặt nhanh</string>
+
+    <!-- Single Tone QS -->
+    <string name="qs_scrim_category_title">Nền QS</string>
+    <string name="qs_single_tone_title">QS đơn sắc</string>
+    <string name="qs_single_tone_summary">Ẩn nền thông báo để giao diện Cài đặt nhanh thống nhất</string>
+
+    <!-- QS tile alternate color -->
+    <string name="qs_tile_alternate_color_title">Màu ô QS thay thế</string>
+    <string name="qs_tile_alternate_color_summary">Sử dụng màu trước QPR cho ô QS</string>
+
+    <!-- Edge haptic -->
+    <string name="haptics_settings_title">Rung hệ thống</string>
+    <string name="haptics_settings_summary">Điều chỉnh cường độ rung hệ thống</string>
+    <string name="edge_scrolling_haptics_intensity_title">Cường độ rung cuộn cạnh</string>
+
+    <!-- Single tap for keyguard affordance -->
+    <string name="keyguard_affordance_single_tap_title">Nhấn đơn phím tắt màn hình khóa</string>
+    <string name="keyguard_affordance_single_tap_summary">Bật/tắt phím tắt màn hình khóa bằng nhấn đơn</string>
+
+    <!-- Small landscape notifications -->
+    <string name="small_landscape_notification_title">Thông báo ngang thu nhỏ</string>
+    <string name="small_landscape_notification_summary">Hiển thị thông báo nhỏ hơn ở chế độ ngang như AOSP dự định</string>
+
+    <string name="dual_target_tile_style_title">Dùng kiểu ô đơn sắc</string>
+    <string name="dual_target_tile_style_summary">Áp dụng tô màu toàn bộ ô cho ô kép như WiFi và Bluetooth</string>
+
+    <string name="volume_dialog_type_title">Kiểu âm lượng</string>
+    <string name="volume_dialog_type_summary">Chọn kiểu hộp thoại âm lượng</string>
+
+    <string name="wifi_icon_style_title">Kiểu biểu tượng Wi-Fi</string>
+    <string name="wifi_icon_style1">Aurora</string>
+    <string name="wifi_icon_style2">Xperia</string>
+    <string name="wifi_icon_style3">Linear</string>
+    <string name="wifi_icon_style4">Nothing Dot</string>
+    <string name="wifi_icon_style5">ZigZag</string>
+
+    <!-- Minimal style -->
+    <string name="qs_tile_style_minimal_title">Kiểu tối giản</string>
+    <string name="qs_tile_style_minimal_summary">Sử dụng kiểu tối giản cho ô QS</string>
+
+    <!-- qs use modified tile spacing -->
+    <string name="qs_use_modified_tile_spacing_title">Sử dụng khoảng cách ô đã chỉnh</string>
+    <string name="qs_use_modified_tile_spacing_summary">Sử dụng khoảng cách ô đã chỉnh để đối xứng hơn</string>
+
+    <!-- Minimal style invert -->
+    <string name="qs_tile_style_minimal_invert_title">Đảo ngược hình dạng ô</string>
+    <string name="qs_tile_style_minimal_invert_summary">Đảo ngược hình dạng của ô kiểu tối giản</string>
+
+    <!-- Brightness slider style -->
+    <string name="qs_brightness_slider_style_title">Kiểu thanh trượt tối giản</string>
+    <string name="qs_brightness_slider_style_summary">Bật kiểu tối giản cho thanh trượt độ sáng</string>
+
+    <!-- Shake Gestures -->
+    <string name="shake_gestures_enabled_title">Cử chỉ lắc</string>
+    <string name="shake_gestures_enabled_summary">Lắc thiết bị để thực hiện hành động</string>
+    <string name="shake_gestures_action_title">Hành động cử chỉ lắc</string>
+    <string name="shake_gestures_toggle_flashlight">Bật/tắt đèn pin</string>
+    <string name="shake_gestures_media_playback">Phát/Chuyển nhạc</string>
+    <string name="shake_gestures_volume_panel">Hiển thị bảng âm lượng</string>
+    <string name="shake_gestures_screen_wake">Bật/tắt màn hình</string>
+    <string name="shake_gestures_clear_notifs">Xóa tất cả thông báo</string>
+    <string name="shake_gestures_toggle_ringer">Chuyển chế độ chuông</string>
+    <string name="shake_gestures_screenshot">Chụp màn hình</string>
+    <string name="shake_gestures_intensity_title">Cường độ cử chỉ lắc</string>
+    <string name="shake_gestures_intensity_summary">Điều chỉnh độ nhạy của cử chỉ lắc</string>
+
+    <!-- Cutout Progress -->
+    <string name="cutout_progress_title">Vòng tiến trình Cutout</string>
+    <string name="cutout_progress_summary">Hiển thị vòng tiến trình quanh lỗ camera</string>
+    <string name="cutout_progress_enabled_title">Bật vòng tiến trình cutout</string>
+    <string name="cutout_progress_enabled_summary">Hiển thị vòng tiến trình quanh lỗ camera khi tải xuống</string>
+    <string name="cutout_progress_cat_appearance">Giao diện</string>
+    <string name="cutout_progress_cat_behaviour">Hành vi</string>
+    <string name="cutout_progress_cat_bg_ring">Vòng nền</string>
+    <string name="cutout_progress_cat_finish">Hiệu ứng hoàn thành</string>
+    <string name="cutout_progress_cat_geometry">Hình học vòng</string>
+    <string name="cutout_progress_cat_labels">Nhãn</string>
+    <string name="cutout_progress_cat_badge">Huy hiệu số tải xuống</string>
+    <string name="cutout_progress_ring_color_title">Màu vòng tùy chỉnh</string>
+    <string name="cutout_progress_error_color_title">Màu lỗi</string>
+    <string name="cutout_progress_finish_flash_color_title">Màu nhấp nháy hoàn thành</string>
+    <string name="cutout_progress_bg_ring_color_title">Màu vòng nền</string>
+    <string name="cutout_progress_opacity_title">Độ mờ vòng</string>
+    <string name="cutout_progress_stroke_width_title">Độ dày nét</string>
+    <string name="cutout_progress_ring_gap_title">Khoảng cách vòng (khe cutout)</string>
+    <string name="cutout_progress_clockwise_title">Chiều kim đồng hồ</string>
+    <string name="cutout_progress_clockwise_summary">Lấp đầy vòng theo chiều kim đồng hồ; tắt để ngược chiều</string>
+    <string name="cutout_progress_min_vis_title">Thời gian hiển thị tối thiểu</string>
+    <string name="cutout_progress_min_vis_summary">Giữ vòng hiển thị trong thời gian tối thiểu để tải nhanh không bị nhấp nháy</string>
+    <string name="cutout_progress_min_vis_ms_title">Thời lượng tối thiểu</string>
+    <string name="cutout_progress_easing_title">Hiệu ứng chuyển động tiến trình</string>
+    <string name="cutout_progress_bg_ring_enabled_title">Hiển thị vòng nền</string>
+    <string name="cutout_progress_bg_ring_enabled_summary">Vẽ vòng mờ phía sau cung tiến trình</string>
+    <string name="cutout_progress_bg_ring_opacity_title">Độ mờ vòng nền</string>
+    <string name="cutout_progress_finish_style_title">Kiểu hiệu ứng hoàn thành</string>
+    <string name="cutout_progress_finish_hold_title">Thời gian giữ</string>
+    <string name="cutout_progress_finish_exit_title">Thời gian thoát</string>
+    <string name="cutout_progress_finish_flash_title">Nhấp nháy màu khi hoàn thành</string>
+    <string name="cutout_progress_finish_flash_summary">Nhấp nháy ngắn vòng với màu hoàn thành khi xong</string>
+    <string name="cutout_progress_pulse_title">Xung hoàn thành</string>
+    <string name="cutout_progress_pulse_summary">Xung sáng ngắn trước hiệu ứng hoàn thành</string>
+    <string name="cutout_progress_path_mode_title">Chế độ viên nang</string>
+    <string name="cutout_progress_path_mode_summary">Sử dụng đường dạng viên nang (cho cutout dài)</string>
+    <string name="cutout_progress_scale_x_title">Tỷ lệ ngang</string>
+    <string name="cutout_progress_scale_y_title">Tỷ lệ dọc</string>
+    <string name="cutout_progress_offset_x_title">Dịch chuyển ngang</string>
+    <string name="cutout_progress_offset_y_title">Dịch chuyển dọc</string>
+    <string name="cutout_progress_percent_enabled_title">Hiển thị phần trăm</string>
+    <string name="cutout_progress_percent_enabled_summary">Hiển thị tiến trình tải xuống dưới dạng phần trăm</string>
+    <string name="cutout_progress_percent_size_title">Cỡ chữ phần trăm</string>
+    <string name="cutout_progress_percent_bold_title">Phần trăm in đậm</string>
+    <string name="cutout_progress_percent_position_title">Vị trí phần trăm</string>
+    <string name="cutout_progress_filename_enabled_title">Hiển thị tên tệp</string>
+    <string name="cutout_progress_filename_enabled_summary">Hiển thị tên tệp đang tải xuống</string>
+    <string name="cutout_progress_filename_size_title">Cỡ chữ tên tệp</string>
+    <string name="cutout_progress_filename_bold_title">Tên tệp in đậm</string>
+    <string name="cutout_progress_filename_position_title">Vị trí tên tệp</string>
+    <string name="cutout_progress_filename_max_chars_title">Độ dài tối đa tên tệp</string>
+    <string name="cutout_progress_filename_truncate_title">Cắt ngắn tên tệp</string>
+    <string name="cutout_progress_badge_title">Hiển thị huy hiệu số tải xuống</string>
+    <string name="cutout_progress_badge_summary">Hiển thị huy hiệu với số lượng tải xuống đang hoạt động</string>
+    <string name="cutout_progress_badge_size_title">Cỡ chữ huy hiệu</string>
+    <string name="cutout_progress_badge_offset_x_title">Dịch chuyển ngang huy hiệu</string>
+    <string name="cutout_progress_badge_offset_y_title">Dịch chuyển dọc huy hiệu</string>
+    <string name="cutout_progress_ring_color_mode_title">Màu vòng</string>
+    <string name="cutout_progress_color_picker_title">Chọn màu</string>
+    <string name="cutout_progress_ring_color_mode_accent">Màu nhấn</string>
+    <string name="cutout_progress_ring_color_mode_rainbow">Cầu vồng</string>
+    <string name="cutout_progress_ring_color_mode_custom">Tùy chỉnh</string>
+
+    <!-- Charging Ring -->
+    <string name="cutout_progress_cat_charging">Vòng sạc</string>
+    <string name="cutout_progress_charging_ring_title">Hiển thị vòng sạc</string>
+    <string name="cutout_progress_charging_ring_summary">Hiển thị mức pin dạng vòng đối xứng quanh cutout khi sạc</string>
+    <string name="cutout_progress_charging_pulse_title">Hiệu ứng xung sạc</string>
+    <string name="cutout_progress_charging_pulse_summary">Hiệu ứng xung lặp lại từ trung tâm ra ngoài khi sạc</string>
+
+    <!-- Lockscreen Clock Highlight Guide -->
+    <string name="ls_clock_title">Đồng hồ màn hình khóa</string>
+    <string name="ls_clock_summary">Đặt kiểu đồng hồ và widget</string>
+    <string name="clock_styles_disclaimer_title">Trước khi tiếp tục</string>
+    <string name="clock_styles_disclaimer_message">Để có trải nghiệm tốt nhất với mặt đồng hồ và widget, hãy đảm bảo:\n\n• Tắt Smartspace màn hình khóa\n• Tắt thời tiết màn hình khóa\n• Tắt kiểu đồng hồ lớn\n\nBạn có thể tìm các tùy chọn này trong Cài đặt màn hình khóa.</string>
+    <string name="ls_clock_face_highlight_text">Vuốt trái hoặc phải để xem trước kiểu đồng hồ</string>
+
+    <!-- Lockscreen Clock Accent Color -->
+    <string name="clock_text_accent_color_title">Dùng màu nhấn cho đồng hồ</string>
+    <string name="clock_text_accent_color_summary">Sử dụng màu nhấn hệ thống thay vì màu trắng cho chữ đồng hồ</string>
+
+    <!-- Lockscreen Clock Opacity -->
+    <string name="clock_text_opacity_title">Độ mờ chữ đồng hồ</string>
+    <string name="clock_text_opacity_summary">Điều chỉnh độ trong suốt của chữ đồng hồ</string>
+
+    <!-- Lockscreen Clock Revamp -->
+    <string name="ls_clock_custom_font_not_supported">Đồng hồ đã chọn không hỗ trợ phông chữ tùy chỉnh</string>
+
+    <!-- Lockscreen widgets  -->
+    <string name="lockscreen_widgets_title">Widget</string>
+    <string name="lockscreen_widgets_enabled_title">Bật Widget màn hình khóa</string>
+    <string name="lockscreen_widgets_enabled_summary">Thêm widget vào màn hình khóa</string>
+    <string name="lockscreen_display_widgets_title">Widget thông tin thiết bị</string>
+    <string name="lockscreen_display_widgets_summary">Hiển thị widget thông tin thiết bị trên màn hình khóa</string>
+    <string name="large_widgets_category_title">Widget lớn</string>
+    <string name="main_custom_widgets1">Widget lớn 1</string>
+    <string name="main_custom_widgets2">Widget lớn 2</string>
+    <string name="mini_widgets_category_title">Widget nhỏ</string>
+    <string name="custom_widgets1">Widget nhỏ 1</string>
+    <string name="custom_widgets2">Widget nhỏ 2</string>
+    <string name="custom_widgets3">Widget nhỏ 3</string>
+    <string name="custom_widgets4">Widget nhỏ 4</string>
+    <string name="camera">Máy ảnh</string>
+    <string name="clock_timer">Đồng hồ/Hẹn giờ</string>
+    <string name="calculator">Máy tính</string>
+    <string name="gallery">Thư viện ảnh</string>
+    <string name="media">Trình phát nhạc</string>
+    <string name="torch">Đèn pin</string>
+    <string name="controls_media_button_play">Phát</string>
+    <string name="weather">Thời tiết</string>
+    <string name="wifi">Wifi</string>
+    <string name="data">Dữ liệu</string>
+    <string name="ringer">Chuông</string>
+    <string name="bt">Bluetooth</string>
+    <string name="hotspot">Điểm phát sóng</string>
+    <string name="wallet">Ví</string>
+    <string name="qr_scanner">Quét mã QR</string>
+
+    <!-- Lockscreen Widgets Styles -->
+    <string name="lockscreen_widgets_style_title">Kiểu widget màn hình khóa</string>
+    <string name="lockscreen_widgets_style1">Bo tròn Material</string>
+    <string name="lockscreen_widgets_style2">Vuông Material</string>
+    <string name="lockscreen_widgets_style3">Vuông trong suốt</string>
+    <string name="lockscreen_widgets_style4">Bo tròn trong suốt</string>
+    <string name="lockscreen_widgets_transparency_title">Độ trong suốt kiểu mờ</string>
+    <string name="lockscreen_widgets_transparency_summary">Cấu hình mức độ mờ của widget kiểu trong suốt</string>
+
+    <!-- AOD custom image -->
+    <string name="lockscreen_custom_image_enabled_title">Ảnh đại diện AOD</string>
+    <string name="lockscreen_custom_image_title">Chọn ảnh AOD</string>
+    <string name="lockscreen_custom_image_summary">Đặt ảnh AOD tùy chỉnh</string>
+    <string name="lockscreen_custom_image_pick_summary">Chọn ảnh AOD từ thư viện</string>
+    <string name="custom_aod_image_not_supported">Kiểu đồng hồ không được hỗ trợ</string>
+    <string name="quick_settings_header_needs_gallery">Bạn cần cài đặt ứng dụng thư viện ảnh!</string>
+
+    <!-- Lockscreen Weather -->
+    <string name="custom_clock_weather_title">Thời tiết màn hình khóa</string>
+    <string name="custom_clock_weather_summary">Hiển thị thời tiết trên đồng hồ màn hình khóa tùy chỉnh</string>
+
+    <!-- Custom clock frame margin top -->
+    <string name="custom_clock_frame_margin_top_title">Chiều cao đồng hồ tùy chỉnh</string>
+    <string name="custom_clock_frame_margin_top_summary">Điều chỉnh chiều cao của kiểu đồng hồ tùy chỉnh</string>
+
+    <!-- Clock color mode -->
+    <string name="clock_color_mode_title">Chế độ màu đồng hồ</string>
+
+    <!-- Show volume percentage -->
+    <string name="show_volume_percentage_title">Hiển thị phần trăm âm lượng</string>
+    <string name="show_volume_percentage_summary">Hiển thị phần trăm âm lượng trong hộp thoại âm lượng mới</string>
+
+    <!-- Compose Volume Panel -->
+    <string name="volume_category">Âm lượng</string>
+    <string name="compose_volume_style_title">Bảng âm lượng Compose</string>
+</resources>
