@@ -178,7 +178,7 @@
             android:key="persist.sys.activity_anim_perf_override"
             android:title="@string/activity_anim_perf_override_title"
             android:summary="@string/activity_anim_perf_override_summary"
-            android:defaultValue="false" />
+            android:defaultValue="true" />
 
         <!-- Display Cutout -->
         <Preference
