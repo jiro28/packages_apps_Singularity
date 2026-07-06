@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clock_frame"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|top"
+    android:gravity="center_horizontal|top"
+    android:orientation="vertical">
 
     <!-- LIFE Text -->
     <TextView
@@ -12,11 +14,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LIFE"
+        android:fontFamily="@font/PlayfairDisplay"
         android:textColor="@android:color/white"
         android:includeFontPadding="false"
-        android:textSize="60sp"
-        android:letterSpacing="0.2"
-        android:layout_marginBottom="18dp" />
+        android:textSize="40sp"
+        android:letterSpacing="0.4"
+        android:layout_marginBottom="63dp" />
 
     <!-- Date Layout -->
     <TextClock
@@ -25,9 +28,10 @@
         android:layout_height="wrap_content"
         android:format12Hour="d/M"
         android:format24Hour="d/M"
+        android:fontFamily="@font/Cotta"
         android:textColor="@android:color/white"
-        android:textSize="25sp"
-        android:layout_marginBottom="8dp" />
+        android:textSize="15sp"
+        android:layout_marginBottom="4dp" />
 
     <!-- Time Layout -->
     <TextClock
@@ -36,9 +40,10 @@
         android:layout_height="wrap_content"
         android:format12Hour="hh:mm"
         android:format24Hour="HH:mm"
+        android:fontFamily="@font/Cotta"
         android:textColor="@android:color/white"
-        android:textSize="44sp"
-        android:layout_marginBottom="8dp" />
+        android:textSize="32sp"
+        android:layout_marginBottom="4dp" />
 
     <!-- Day Text -->
     <TextClock
@@ -47,7 +52,9 @@
         android:layout_height="wrap_content"
         android:format12Hour="EEE"
         android:format24Hour="EEE"
+        android:fontFamily="@font/Cotta"
         android:textColor="@android:color/white"
-        android:textSize="20sp" />
+        android:textSize="15sp"
+        android:layout_marginBottom="4dp" />
 
 </LinearLayout>

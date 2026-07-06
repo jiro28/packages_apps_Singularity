@@ -31,7 +31,8 @@
         android:summary="%s"
         android:entries="@array/cutout_progress_ring_color_mode_entries"
         android:entryValues="@array/cutout_progress_ring_color_mode_values"
-        android:defaultValue="0" />
+        android:defaultValue="0"
+        android:dependency="cutout_progress_enabled" />
 
     <Preference
         android:key="cutout_progress_ring_color"
@@ -44,13 +45,15 @@
         android:key="cutout_progress_error_color"
         android:title="@string/cutout_progress_error_color_title"
         android:summary="#F44336"
-        android:persistent="false" />
+        android:persistent="false"
+        android:dependency="cutout_progress_enabled" />
 
     <Preference
         android:key="cutout_progress_finish_flash_color"
         android:title="@string/cutout_progress_finish_flash_color_title"
         android:summary="#FFFFFF"
-        android:persistent="false" />
+        android:persistent="false"
+        android:dependency="cutout_progress_enabled" />
 
     <org.lunaris.settings.preferences.SecureSettingSeekBarPreference
         android:key="cutout_progress_opacity"
@@ -59,7 +62,8 @@
         settings:min="0"
         settings:interval="1"
         settings:units="%"
-        android:defaultValue="90" />
+        android:defaultValue="90"
+        android:dependency="cutout_progress_enabled" />
 
     <org.lunaris.settings.preferences.SecureSettingSeekBarPreference
         android:key="cutout_progress_stroke_width_dp10"
@@ -68,7 +72,8 @@
         settings:min="5"
         settings:interval="5"
         settings:units=" (×0.1 dp)"
-        android:defaultValue="20" />
+        android:defaultValue="20"
+        android:dependency="cutout_progress_enabled" />
 
     <org.lunaris.settings.preferences.SecureSettingSeekBarPreference
         android:key="cutout_progress_ring_gap_x1000"
@@ -77,12 +82,19 @@
         settings:min="1000"
         settings:interval="10"
         settings:units=" (×0.001)"
-        android:defaultValue="1155" />
+        android:defaultValue="1155"
+        android:dependency="cutout_progress_enabled" />
 
     <PreferenceCategory
-        android:key="cutout_progress_cat_charging"
-        android:title="@string/cutout_progress_cat_charging"
+        android:key="cutout_progress_cat_battery"
+        android:title="@string/cutout_progress_cat_battery"
         android:dependency="cutout_progress_enabled">
+
+        <org.lunaris.settings.preferences.SecureSettingSwitchPreference
+            android:key="cutout_progress_battery_indicator_enabled"
+            android:title="@string/cutout_progress_battery_indicator_title"
+            android:summary="@string/cutout_progress_battery_indicator_summary"
+            android:defaultValue="false" />
 
         <org.lunaris.settings.preferences.SecureSettingSwitchPreference
             android:key="cutout_progress_charging_ring_enabled"
@@ -96,6 +108,61 @@
             android:summary="@string/cutout_progress_charging_pulse_summary"
             android:defaultValue="true"
             android:dependency="cutout_progress_charging_ring_enabled" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="cutout_progress_cat_music"
+        android:title="@string/cutout_progress_cat_music"
+        android:dependency="cutout_progress_enabled">
+
+        <org.lunaris.settings.preferences.SecureSettingSwitchPreference
+            android:key="cutout_progress_music_enabled"
+            android:title="@string/cutout_progress_music_title"
+            android:summary="@string/cutout_progress_music_summary"
+            android:defaultValue="false" />
+
+        <org.lunaris.settings.preferences.SecureSettingListPreference
+            android:key="cutout_progress_music_color_mode"
+            android:title="@string/cutout_progress_music_color_mode_title"
+            android:summary="%s"
+            android:entries="@array/cutout_progress_music_color_mode_entries"
+            android:entryValues="@array/cutout_progress_music_color_mode_values"
+            android:defaultValue="0"
+            android:dependency="cutout_progress_music_enabled" />
+
+        <Preference
+            android:key="cutout_progress_music_custom_color"
+            android:title="@string/cutout_progress_music_custom_color_title"
+            android:summary="#9C27B0"
+            android:persistent="false"
+            android:dependency="cutout_progress_music_enabled" />
+
+        <org.lunaris.settings.preferences.SecureSettingSeekBarPreference
+            android:key="cutout_progress_music_opacity"
+            android:title="@string/cutout_progress_music_opacity_title"
+            android:max="100"
+            settings:min="0"
+            settings:interval="1"
+            settings:units="%"
+            android:defaultValue="85"
+            android:dependency="cutout_progress_music_enabled" />
+
+        <org.lunaris.settings.preferences.SecureSettingSeekBarPreference
+            android:key="cutout_progress_music_stroke_dp10"
+            android:title="@string/cutout_progress_music_stroke_title"
+            android:max="80"
+            settings:min="5"
+            settings:interval="5"
+            settings:units=" (×0.1 dp)"
+            android:defaultValue="20"
+            android:dependency="cutout_progress_music_enabled" />
+
+        <org.lunaris.settings.preferences.SecureSettingSwitchPreference
+            android:key="cutout_progress_music_clockwise"
+            android:title="@string/cutout_progress_music_clockwise_title"
+            android:defaultValue="true"
+            android:dependency="cutout_progress_music_enabled" />
 
     </PreferenceCategory>
 
@@ -163,6 +230,29 @@
             settings:units="%"
             android:defaultValue="30"
             android:dependency="cutout_progress_bg_ring_enabled" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="cutout_progress_cat_glow"
+        android:title="@string/cutout_progress_cat_glow"
+        android:dependency="cutout_progress_enabled">
+
+        <org.lunaris.settings.preferences.SecureSettingSwitchPreference
+            android:key="cutout_progress_glow_enabled"
+            android:title="@string/cutout_progress_glow_enabled_title"
+            android:summary="@string/cutout_progress_glow_enabled_summary"
+            android:defaultValue="false" />
+
+        <org.lunaris.settings.preferences.SecureSettingSeekBarPreference
+            android:key="cutout_progress_glow_radius_dp10"
+            android:title="@string/cutout_progress_glow_radius_title"
+            android:max="150"
+            settings:min="10"
+            settings:interval="5"
+            settings:units=" (×0.1 dp)"
+            android:defaultValue="40"
+            android:dependency="cutout_progress_glow_enabled" />
 
     </PreferenceCategory>
 

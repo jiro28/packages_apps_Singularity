@@ -35,7 +35,6 @@ import com.android.settingslib.search.SearchIndexable;
 
 import org.lunaris.settings.utils.DeviceUtils;
 import org.lunaris.settings.utils.SystemUtils;
-import org.lunaris.settings.utils.TelephonyUtils;
 
 import com.android.internal.util.lunaris.VibrationUtils;
 
@@ -54,11 +53,10 @@ public class LockScreen extends SettingsPreferenceFragment
     private static final String KEY_WEATHER = "lockscreen_weather_enabled";
     private static final String KEY_KG_USER_SWITCHER = "kg_user_switcher_enabled";
     private static final String LUNARIS_UDFPS_CUSTOM_CATEGORY = "lockscreen_custom_category";
+    private static final String KEY_KEYGUARD_SCRIM = "keyguard_scrim_transparent";
 
     private static final String KEY_FP_SUCCESS = "fp_success_vibrate";
     private static final String KEY_FP_ERROR = "fp_error_vibrate";
-
-    private static final String KEY_CARRIER_NAME = "lockscreen_show_carrier";
 
     private static final String PROP_CUSTOM_UDFPS = "persist.sys.udfps.custom";
 
@@ -69,6 +67,7 @@ public class LockScreen extends SettingsPreferenceFragment
     private SwitchPreferenceCompat mKgUserSwitcher;
     private SwitchPreferenceCompat mFpSuccessVib;
     private SwitchPreferenceCompat mFpErrorVib;
+    private SwitchPreferenceCompat mKeyguardScrim;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -99,12 +98,6 @@ public class LockScreen extends SettingsPreferenceFragment
             gestCategory.removePreference(mFpErrorVib);
         }
 
-        if (!TelephonyUtils.isVoiceCapable(context)) {
-            PreferenceCategory intCategory = (PreferenceCategory) findPreference(LOCKSCREEN_INTERFACE_CATEGORY);
-            SwitchPreferenceCompat carrierName = findPreference(KEY_CARRIER_NAME);
-            intCategory.removePreference(carrierName);
-        }
-
         mSmartspace = (SwitchPreferenceCompat) findPreference(KEY_SMARTSPACE);
         mSmartspace.setOnPreferenceChangeListener(this);
 
@@ -113,6 +106,9 @@ public class LockScreen extends SettingsPreferenceFragment
 
         mKgUserSwitcher = (SwitchPreferenceCompat) findPreference(KEY_KG_USER_SWITCHER);
         mKgUserSwitcher.setOnPreferenceChangeListener(this);
+
+        mKeyguardScrim = (SwitchPreferenceCompat) findPreference(KEY_KEYGUARD_SCRIM);
+        mKeyguardScrim.setOnPreferenceChangeListener(this);
 
         updateWeatherSettings();
     }
@@ -138,6 +134,10 @@ public class LockScreen extends SettingsPreferenceFragment
             return true;
         } else if (preference == mKgUserSwitcher) {
             mKgUserSwitcher.setChecked((Boolean)newValue);
+            SystemUtils.showSystemUiRestartDialog(getContext());
+            return true;
+        } else if (preference == mKeyguardScrim) {
+            mKeyguardScrim.setChecked((Boolean) newValue);
             SystemUtils.showSystemUiRestartDialog(getContext());
             return true;
         }
@@ -183,9 +183,6 @@ public class LockScreen extends SettingsPreferenceFragment
                     if (!hasFingerprint || !hapticAvailable) {
                         keys.add(KEY_FP_SUCCESS);
                         keys.add(KEY_FP_ERROR);
-                    }
-                    if (!TelephonyUtils.isVoiceCapable(context)) {
-                        keys.add(KEY_CARRIER_NAME);
                     }
                     return keys;
                 }

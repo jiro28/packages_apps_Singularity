@@ -36,11 +36,79 @@
             android:summary="@string/lockscreen_quick_settings_summary"
             android:defaultValue="true" />
 
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_split_shade"
+            android:title="@string/qs_split_shade_title"
+            android:summary="@string/qs_split_shade_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
         android:key="qs_layout_category"
         android:title="@string/qs_layout_category_title">
+
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_widget_panel"
+            android:title="@string/qs_widget_panel_title"
+            android:summary="@string/qs_widget_panel_summary"
+            android:defaultValue="false" />
+
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_widget_ios_music"
+            android:title="@string/qs_widget_ios_music_title"
+            android:summary="@string/qs_widget_ios_music_summary"
+            android:defaultValue="false" />
+
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_widget_slider_corner"
+            android:title="@string/qs_widget_slider_corner_title"
+            android:summary="@string/qs_widget_slider_corner_summary"
+            android:defaultValue="false" />
+
+        <org.lunaris.settings.preferences.SystemSettingSeekBarPreference
+            android:key="shade_scrim_alpha"
+            android:title="@string/shade_scrim_alpha_title"
+            android:summary="@string/shade_scrim_alpha_summary"
+            android:max="100"
+            settings:min="0"
+            android:defaultValue="100"
+            settings:units="%"
+            settings:interval="1" />
+
+        <org.lunaris.settings.preferences.SystemSettingSeekBarPreference
+            android:key="notification_scrim_alpha"
+            android:title="@string/notification_scrim_alpha_title"
+            android:summary="@string/notification_scrim_alpha_summary"
+            android:max="100"
+            settings:min="0"
+            android:defaultValue="100"
+            settings:units="%"
+            settings:interval="1" />
+
+        <org.lunaris.settings.preferences.SystemSettingListPreference
+            android:key="qs_panel_style"
+            android:title="@string/qs_panel_style_title"
+            android:entries="@array/qs_panel_style_entries"
+            android:entryValues="@array/qs_panel_style_values"
+            android:defaultValue="0" />
+
+        <org.lunaris.settings.preferences.QSTileIconShapePreference
+            android:key="qs_tile_icon_shape"
+            android:title="@string/qs_tile_shape_title" />
+
+        <org.lunaris.settings.preferences.SystemSettingListPreference
+            android:key="qs_tile_animation_style"
+            android:title="@string/qs_tile_animation_style_title"
+            android:entries="@array/qs_tile_animation_style_entries"
+            android:entryValues="@array/qs_tile_animation_style_values"
+            android:defaultValue="9" />
+
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_tile_label_hide"
+            android:title="@string/qs_tile_label_hide_title"
+            android:summary="@string/qs_tile_label_hide_summary"
+            android:defaultValue="false" />
 
         <org.lunaris.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_style_minimal"
@@ -104,6 +172,12 @@
             android:summary="@string/qs_tile_alternate_color_summary"
             android:defaultValue="false" />
 
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="notification_bg_alternate_color"
+            android:title="@string/notification_bg_alternate_color_title"
+            android:summary="@string/notification_bg_alternate_color_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -151,6 +225,51 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+         android:key="qs_volume_slider_category"
+         android:title="@string/qs_volume_slider_category">
+
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_volume_slider_style"
+            android:title="@string/qs_volume_slider_style_title"
+            android:summary="@string/qs_volume_slider_style_summary"
+            android:defaultValue="false" />
+
+        <org.lunaris.settings.preferences.SystemSettingListPreference
+            android:key="qs_show_volume_slider"
+            android:title="@string/qs_show_volume_slider_title"
+            android:entries="@array/qs_show_brightness_slider_entries"
+            android:entryValues="@array/qs_show_brightness_slider_values"
+            android:defaultValue="0" />
+
+        <org.lunaris.settings.preferences.SystemSettingListPreference
+            android:key="qs_volume_slider_shape"
+            android:title="@string/qs_volume_slider_shape_title"
+            android:entries="@array/qs_brightness_slider_shape_entries"
+            android:entryValues="@array/qs_brightness_slider_shape_values"
+            android:defaultValue="0" />
+
+        <org.lunaris.settings.preferences.SystemSettingListPreference
+            android:key="qs_volume_slider_position"
+            android:title="@string/qs_volume_slider_position_title"
+            android:entries="@array/qs_brightness_slider_position_entries"
+            android:entryValues="@array/qs_brightness_slider_position_values"
+            android:defaultValue="1" />
+
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_volume_slider_haptic"
+            android:title="@string/qs_show_haptic_title"
+            android:summary="@string/qs_show_haptic_summary"
+            android:defaultValue="true" />
+
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_show_ringer_button"
+            android:title="@string/qs_show_ringer_button_title"
+            android:summary="@string/qs_show_ringer_button_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
     <PreferenceCategory 
          android:title="@string/qs_footer_category">
 
@@ -189,12 +308,20 @@
         android:key="quick_settings_media_category"
         android:title="@string/quick_settings_media_category">
 
+        <org.lunaris.settings.preferences.SecureSettingListPreference
+            android:key="qs_show_media_player"
+            android:title="@string/qs_show_media_player_title"
+            android:summary="%s"
+            android:entries="@array/qs_show_media_player_entries"
+            android:entryValues="@array/qs_show_media_player_values"
+            android:defaultValue="2" />
+
         <org.lunaris.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_compact_media_player_mode"
             android:title="@string/qs_compact_media_player_mode_title"
             android:summary="@string/qs_compact_media_player_mode_summary"
             android:defaultValue="false" />
-        
+
         <org.lunaris.settings.preferences.OverlaySwitchPreference
             android:key="com.android.system.qs.qsmedia"
             android:title="@string/qs_media_stock_title"

@@ -25,7 +25,6 @@ import android.provider.MediaStore
 import android.provider.Settings
 import android.widget.Toast
 
-import androidx.preference.ListPreference
 import androidx.preference.Preference
 
 import com.android.internal.util.lunaris.VibrationUtils
@@ -39,28 +38,16 @@ class ClockStyles : BasePreferenceFragment(R.xml.clock_styles),
     Preference.OnPreferenceChangeListener {
 
     companion object {
-        private const val KEY_CLOCK_COLOR_MODE = "clock_color_mode"
-        private const val KEY_CLOCK_CUSTOM_COLOR = "clock_custom_color"
         private const val KEY_CUSTOM_AOD_IMAGE = "lockscreen_custom_image"
-        private const val COLOR_MODE_CUSTOM = "custom"
         private const val CUSTOM_IMAGE_REQUEST_CODE = 1001
     }
 
-    private var mClockColorMode: ListPreference? = null
-    private var mClockCustomColor: Preference? = null
     private var mCustomImagePreference: Preference? = null
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         super.onCreatePreferences(savedInstanceState, rootKey)
 
-        mClockColorMode = findPreference(KEY_CLOCK_COLOR_MODE)
-        mClockCustomColor = findPreference(KEY_CLOCK_CUSTOM_COLOR)
         mCustomImagePreference = findPreference(KEY_CUSTOM_AOD_IMAGE)
-
-        mClockColorMode?.let {
-            it.onPreferenceChangeListener = this
-            updateCustomColorPickerVisibility(it.value)
-        }
 
         updateCustomImagePreference()
         showDisclaimer()
@@ -69,14 +56,13 @@ class ClockStyles : BasePreferenceFragment(R.xml.clock_styles),
     override fun onResume() {
         super.onResume()
         updateCustomImagePreference()
-        mClockColorMode?.let { updateCustomColorPickerVisibility(it.value) }
     }
 
     override fun onPreferenceTreeClick(preference: Preference): Boolean {
         if (preference.key != null) {
             VibrationUtils.triggerVibration(context, 3)
         }
-        if (preference == mCustomImagePreference) {
+        if (preference.key == KEY_CUSTOM_AOD_IMAGE) {
             try {
                 val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
                 intent.type = "image/*"
@@ -121,10 +107,6 @@ class ClockStyles : BasePreferenceFragment(R.xml.clock_styles),
     }
 
     override fun onPreferenceChange(preference: Preference, newValue: Any): Boolean {
-        if (preference == mClockColorMode) {
-            updateCustomColorPickerVisibility(newValue as String)
-            return true
-        }
         return false
     }
 
@@ -140,26 +122,11 @@ class ClockStyles : BasePreferenceFragment(R.xml.clock_styles),
             .show()
     }
 
-    private fun updateCustomColorPickerVisibility(colorMode: String?) {
-        mClockCustomColor?.isVisible = colorMode == COLOR_MODE_CUSTOM
-    }
-
     private fun updateCustomImagePreference() {
         val pref = mCustomImagePreference ?: return
         val ctx = context ?: return
 
-        val clockStyle = Settings.Secure.getIntForUser(
-            ctx.contentResolver,
-            "clock_style", 0, UserHandle.USER_CURRENT
-        )
         val imagePath = Settings.System.getString(ctx.contentResolver, "custom_aod_image_uri")
-
-        if (imagePath != null && clockStyle > 0) {
-            pref.summary = imagePath
-            pref.isEnabled = true
-        } else if (clockStyle == 0) {
-            pref.summary = ctx.getString(R.string.custom_aod_image_not_supported)
-            pref.isEnabled = false
-        }
+        pref.summary = imagePath ?: ctx.getString(R.string.lockscreen_custom_image_pick_summary)
     }
 }

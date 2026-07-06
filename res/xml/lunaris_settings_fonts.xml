@@ -20,12 +20,12 @@
     android:title="@string/font_settings_title">
 
     <org.lunaris.settings.preferences.SystemSettingListPreference
-        android:key="font_mode"
-        android:title="@string/font_mode_title"
+        android:key="emoji_style"
+        android:title="@string/emoji_style_title"
         android:summary="%s"
-        android:entries="@array/font_mode_entries"
-        android:entryValues="@array/font_mode_values"
-        android:defaultValue="prebuilt" />
+        android:entries="@array/emoji_style_entries"
+        android:entryValues="@array/emoji_style_values"
+        android:defaultValue="android" />
 
     <!-- Prebuilt Fonts -->
     <org.lunaris.settings.preferences.FontsPickerPreference

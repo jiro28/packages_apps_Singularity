@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clock_frame"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center|top"
@@ -30,8 +31,8 @@
         <TextClock
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:format12Hour="hh : mm | MMM dd"
-            android:format24Hour="HH : mm | dd MMM"
+            android:format12Hour="hh : mm  |  MMM dd"
+            android:format24Hour="HH : mm  |  dd MMM"
             android:includeFontPadding="false"
             android:fontFamily="@*android:string/config_clockFontFamily"
             android:tag="text1"

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clock_frame"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center|top"
     android:gravity="center|top"
     android:orientation="vertical">
-    
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal">
 
         <TextView
@@ -18,7 +19,7 @@
             android:tag="accent2|nolineheight"
             android:text="·"
             android:textColor="@android:color/system_accent1_600"
-            android:textSize="40sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -26,20 +27,21 @@
             android:tag="accent3|nolineheight"
             android:text="·"
             android:textColor="@android:color/system_accent2_600"
-            android:textSize="40sp" />
+            android:textSize="20sp" />
+
     </LinearLayout>
 
     <TextClock
         android:id="@+id/day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-20dp"
+        android:layout_marginTop="-10dp"
         android:fontFamily="@*android:string/config_clockFontFamily"
         android:format12Hour="EEEE"
         android:format24Hour="EEEE"
         android:tag="text1|nolineheight"
         android:textColor="#FFFFFF"
-        android:textSize="40sp" />
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,16 +60,16 @@
             android:inputType="text|textCapCharacters"
             android:tag="accent1"
             android:textColor="@android:color/system_accent1_300"
-            android:textSize="28sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="12dp"
+            android:layout_marginHorizontal="6dp"
             android:fontFamily="@*android:string/config_clockFontFamily"
             android:text="x"
             android:textColor="@android:color/white"
-            android:textSize="28sp" />
+            android:textSize="14sp" />
 
         <TextClock
             android:id="@+id/time"
@@ -78,7 +80,8 @@
             android:format24Hour="HH:mm"
             android:tag="text2"
             android:textColor="#FFFFFF"
-            android:textSize="28sp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
+
 </LinearLayout>

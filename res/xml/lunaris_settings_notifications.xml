@@ -43,11 +43,11 @@
         android:key="notification_category"
         android:title="@string/notification_category_title">
 
-        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
-            android:key="alert_slider_notifications"
-            android:title="@string/alert_slider_notifications_title"
-            android:summary="@string/alert_slider_notifications_summary"
-            android:defaultValue="true" />
+        <Preference
+            android:key="essential_notifications"
+            android:title="@string/essential_notifications"
+            android:summary="@string/essential_notifications_summary"
+            android:fragment="org.lunaris.settings.fragments.notifications.EssentialNotificationsSettings" />
 
         <org.lunaris.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_sound_vib_screen_on"
@@ -79,6 +79,27 @@
             android:title="@string/notification_row_transparency_lockscreen_title"
             android:summary="@string/notification_row_transparency_lockscreen_summary"
             android:defaultValue="true" />
+
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="notification_icons_center_aligned"
+            android:title="@string/notification_icons_center_aligned_title"
+            android:summary="@string/notification_icons_center_aligned_summary"
+            android:defaultValue="false" />
+
+        <!-- Notification app icon -->
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="notification_use_app_icons"
+            android:title="@string/notification_use_app_icons_title"
+            android:summary="@string/notification_use_app_icons_summary"
+            android:defaultValue="true" />
+
+        <!-- Notification themed app icon -->
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="notification_use_themed_app_icons"
+            android:title="@string/notification_use_themed_app_icons_title"
+            android:summary="@string/notification_use_themed_app_icons_summary"
+            android:defaultValue="false"
+            android:dependency="notification_use_app_icons" />
 
     </PreferenceCategory>
 

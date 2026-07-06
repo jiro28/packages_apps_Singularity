@@ -40,26 +40,19 @@
             android:summary="@string/app_downgrade_summary"
             android:defaultValue="false"/>
 
-        <Preference
-            android:key="hide_developer_status_settings"
-            android:title="@string/hide_developer_status_title"
-            android:summary="@string/hide_developer_status_summary"
-            android:fragment="com.android.settings.security.HideDeveloperStatusSettings"
-            settings:controller="com.android.settings.security.HideDeveloperStatusPreferenceController" />
-
-        <!-- Hide applist -->
-        <Preference
-            android:key="hide_applist_setting"
-            android:title="@string/hide_applist_title"
-            android:summary="@string/hide_applist_summary"
-            android:fragment="org.lunaris.settings.fragments.miscellaneous.HideAppListSettings" />
-
         <!-- Ignore window secure flags -->
         <org.lunaris.settings.preferences.GlobalSettingSwitchPreference
             android:key="window_ignore_secure"
             android:title="@string/miscellaneous_ignore_window_secure_title"
             android:summary="@string/miscellaneous_ignore_window_secure_summary"
             android:defaultValue="false" />
+
+        <!-- Block PairIP license activity -->
+        <org.lunaris.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pairip.activity.block"
+            android:title="@string/miscellaneous_pairip_activity_block_title"
+            android:summary="@string/miscellaneous_pairip_activity_block_summary"
+            android:defaultValue="false" /> 
 
         <!-- Block wallpaper dimming -->
         <org.lunaris.settings.preferences.SystemSettingSwitchPreference
@@ -68,12 +61,11 @@
             android:summary="@string/ignore_wallpaper_dimming_requests_summary"
             android:defaultValue="false" />
 
-        <!-- Unlimit screenrecord -->
-        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+        <!-- <org.lunaris.settings.preferences.SystemSettingSwitchPreference
             android:key="unlimit_screenrecord"
             android:title="@string/unlimit_screenrecord_title"
             android:summary="@string/unlimit_screenrecord_summary"
-            android:defaultValue="false" />
+            android:defaultValue="false" /> -->
 
         <!-- No storage restrict -->
         <org.lunaris.settings.preferences.GlobalSettingSwitchPreference
@@ -87,6 +79,13 @@
             android:key="hide_screen_capture_status"
             android:title="@string/hide_screen_capture_status_title"
             android:summary="@string/hide_screen_capture_status_summary"
+            android:defaultValue="false"/>
+
+        <!-- Disable flash sms -->
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="disable_flash_sms"
+            android:title="@string/disable_flash_sms_title"
+            android:summary="@string/disable_flash_sms_summary"
             android:defaultValue="false"/>
 
     </PreferenceCategory>
@@ -134,6 +133,13 @@
             android:title="@string/floating_rotation_button_title"
             android:summary="@string/floating_rotation_button_summary"
             android:defaultValue="true" />
+
+        <!-- Notification bubble apps -->
+        <org.lunaris.settings.preferences.SystemSettingSwitchPreference
+            android:key="notification_bubble_apps"
+            android:title="@string/notification_bubble_apps_title"
+            android:summary="@string/notification_bubble_apps_summary"
+            android:defaultValue="false" />
 
         <!-- Gaming mode -->
         <Preference

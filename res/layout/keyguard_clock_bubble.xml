@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/clock_frame"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center">
+    android:layout_gravity="center_horizontal|top"
+    android:gravity="center_horizontal|top">
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -13,8 +15,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/clock_bubble_3"
-            android:layout_marginTop="60dp"
-            android:layout_marginStart="50dp"/>
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="25dp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -29,7 +31,7 @@
                 android:format12Hour="hh"
                 android:textColor="@android:color/system_accent1_900"
                 android:format24Hour="HH"
-                android:textSize="111sp"
+                android:textSize="56sp"
                 android:textStyle="bold" />
 
             <TextClock
@@ -38,19 +40,19 @@
                 android:format12Hour="mm"
                 android:format24Hour="MM"
                 android:fontFamily="@font/general_sans"
-                android:textSize="47sp"
+                android:textSize="24sp"
                 android:textColor="@android:color/system_accent1_900"
                 android:textStyle="bold"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="23dp"/>
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="12dp"/>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="140dp"
-            android:layout_marginTop="270dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="135dp"
             android:gravity="center"
             android:background="@drawable/clock_bubble_2"
             android:tag="accent2">
@@ -63,15 +65,15 @@
                 android:gravity="center"
                 android:textAllCaps="true"
                 android:textColor="@android:color/system_accent2_900"
-                android:textSize="15sp" />
+                android:textSize="8sp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="270dp"
-            android:layout_marginTop="121dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="61dp"
             android:background="@drawable/clock_bubble_2"
             android:gravity="center">
 
@@ -83,7 +85,7 @@
                 android:gravity="center"
                 android:textAllCaps="true"
                 android:textColor="@android:color/system_accent2_50"
-                android:textSize="20sp" />
+                android:textSize="10sp" />
 
         </LinearLayout>
     </FrameLayout>
